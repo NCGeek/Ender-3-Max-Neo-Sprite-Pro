@@ -9,32 +9,32 @@ Credit also goes to bamacups for creating a 3D printed part for the filament sen
 Cura Settings:<br />
 
 Start G-Code:<br />
-; Ender 3 Max Custom Start G-code
-G92 E0 ; Reset Extruder
-G28 ; Home all axes
-G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
-G1 X10.1 Y20 Z0.3 F5000.0 ; Move to start position
-G1 X10.1 Y200.0 Z0.3 F1500.0 E15 ; Draw the first line
-G1 X10.4 Y200.0 Z0.3 F5000.0 ; Move to side a little
-G1 X10.4 Y20 Z0.3 F1500.0 E30 ; Draw the second line
-G92 E0 ; Reset Extruder
-G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
-G1 X5 Y20 Z0.3 F5000.0 ; Move over to prevent blob squish
+; Ender 3 Max Custom Start G-code<br />
+G92 E0 ; Reset Extruder<br />
+G28 ; Home all axes<br />
+G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed<br />
+G1 X10.1 Y20 Z0.3 F5000.0 ; Move to start position<br />
+G1 X10.1 Y200.0 Z0.3 F1500.0 E15 ; Draw the first line<br />
+G1 X10.4 Y200.0 Z0.3 F5000.0 ; Move to side a little<br />
+G1 X10.4 Y20 Z0.3 F1500.0 E30 ; Draw the second line<br />
+G92 E0 ; Reset Extruder<br />
+G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed<br />
+G1 X5 Y20 Z0.3 F5000.0 ; Move over to prevent blob squish<br />
 
-End G-Code:
-G91 ;Relative positioning
-G1 E-2 F2700 ;Retract a bit
-G1 E-2 Z0.2 F2400 ;Retract and raise Z
-G1 X5 Y5 F3000 ;Wipe out
-G1 Z10 ;Raise Z more
-G90 ;Absolute positioning
+End G-Code:<br />
+G91 ;Relative positioning<br />
+G1 E-2 F2700 ;Retract a bit<br />
+G1 E-2 Z0.2 F2400 ;Retract and raise Z<br />
+G1 X5 Y5 F3000 ;Wipe out<br />
+G1 Z10 ;Raise Z more<br />
+G90 ;Absolute positioning<br />
 
-G1 X0 Y290 ;Present print
-M106 S0 ;Turn-off fan
-M104 S0 ;Turn-off hotend
-M140 S0 ;Turn-off bed
+G1 X0 Y290 ;Present print<br />
+M106 S0 ;Turn-off fan<br />
+M104 S0 ;Turn-off hotend<br />
+M140 S0 ;Turn-off bed<br />
 
-M84 X Y E ;Disable all steppers but Z
+M84 X Y E ;Disable all steppers but Z<br />
 
 Extruder:
 Nozzle Offset X: -5.0mm
