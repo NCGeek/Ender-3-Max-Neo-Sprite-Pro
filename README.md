@@ -1,14 +1,14 @@
 # Ender-3-Max-Neo-Sprite-Pro
 Klipper printer settings for Ender 3 Max Neo v4.2.7 board with the Sprite Extruder Pro upgrade. 
 
-Credit goes to ParrotKng for posting the v4.2.2 version on Reddit. https://www.reddit.com/r/klippers/comments/yxd4z7/for_anyone_trying_to_install_fluidd_klipper_on/
-Credit also goes to BotMeka for creating a 3D printed part that allows this to work. https://www.thingiverse.com/thing:5581314
-Credit also goes to bamacups for creating a 3D printed part for the filament sensor. https://www.thingiverse.com/thing:5886875
+Credit goes to ParrotKng for posting the v4.2.2 version on Reddit. https://www.reddit.com/r/klippers/comments/yxd4z7/for_anyone_trying_to_install_fluidd_klipper_on/ <br />
+Credit also goes to BotMeka for creating a 3D printed part that allows this to work. https://www.thingiverse.com/thing:5581314 <br />
+Credit also goes to bamacups for creating a 3D printed part for the filament sensor. https://www.thingiverse.com/thing:5886875 <br />
 
 
-Cura Settings:
+Cura Settings:<br />
 
-Start G-Code:
+Start G-Code:<br />
 ; Ender 3 Max Custom Start G-code
 G92 E0 ; Reset Extruder
 G28 ; Home all axes
