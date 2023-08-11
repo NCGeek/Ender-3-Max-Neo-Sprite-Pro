@@ -32,6 +32,9 @@ G90 ;Absolute positioning<br />
 G1 X0 Y290 ;Present print<br />
 M106 S0 ;Turn-off fan<br />
 M104 S0 ;Turn-off hotend<br />
+
+Additional Information:<br />
+https://github.com/Jyers/Marlin/discussions/814<br />
 M140 S0 ;Turn-off bed<br />
 
 M84 X Y E ;Disable all steppers but Z<br />
