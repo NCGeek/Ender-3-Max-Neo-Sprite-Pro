@@ -4,7 +4,8 @@ Klipper printer settings for Ender 3 Max Neo v4.2.7 board with the Sprite Extrud
 Credit goes to ParrotKng for posting the v4.2.2 version on Reddit. https://www.reddit.com/r/klippers/comments/yxd4z7/for_anyone_trying_to_install_fluidd_klipper_on/ <br />
 Credit also goes to BotMeka for creating a 3D printed part that allows this to work. https://www.thingiverse.com/thing:5581314 <br />
 Credit also goes to bamacups for creating a 3D printed part for the filament sensor. https://www.thingiverse.com/thing:5886875 <br />
-
+<br />
+Macro.cfg includes examples of powering off the printer when its IDLE. In my example I am using home assistant to power on and off the printer when certain conditions are met. If the printer is IDLE for more than 26 minutes and the extruder temperature is under 60C, power it off. If a job is sent from Cura and stored in Klipper Queue power the printer on and start the job. <br />
 
 Cura Settings:<br />
 
