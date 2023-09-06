@@ -12,6 +12,7 @@ M109 S150 ;Wait heating extruder to reach 150C
 M190 S{material_bed_temperature_layer_0}  
 M104 S{material_print_temperature_layer_0} ;Continue heating extruder
 M190 S{material_bed_temperature_layer_0} ;Wait for bed to reach temp before proceeding
+G4 S300 ; wait 60 seconds × 5 minutes
 M109 S{material_print_temperature_layer_0} ;Wait for extruder to reach temp before proceeding
 G1 X10.1 Y20 Z0.3 F5000.0 ; Move to start position
 G1 X10.1 Y200.0 Z0.3 F1500.0 E15 ; Draw the first line
