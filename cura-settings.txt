@@ -1,0 +1,24 @@
+Test configuration for printing ASA. My goal is to heat up the printer bed in the enclosure, long enough to stablize before I print.
+
+M140 S110; start heating bed to 110C
+M104 S150 ;Start heating extruder to 150C
+G28; Home all axes
+BED_MESH_PROFILE LOAD="default"; loads klipper bed mesh
+G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
+G1 X-10.0 Y295; Move to edge of bed
+M190 S110 
+M190 S{material_bed_temperature_layer_0}  
+M104 S{material_print_temperature_layer_0} ;Continue heating extruder
+M190 S{material_bed_temperature_layer_0} ;Wait for bed to reach temp before proceeding
+M109 S{material_print_temperature_layer_0} ;Wait for extruder to reach temp before proceeding
+G1 X10.1 Y20 Z0.3 F5000.0 ; Move to start position
+G1 X10.1 Y200.0 Z0.3 F1500.0 E15 ; Draw the first line
+G1 X10.4 Y200.0 Z0.3 F5000.0 ; Move to side a little
+G1 X10.4 Y20 Z0.3 F1500.0 E30 ; Draw the second line
+G1 X10.7 Y200.0 Z0.3 F5000.0 ; Move to side a little
+G1 X10.7 Y20 Z0.3 F1500.0 E30 ; Draw the third line
+G92 E0 ; Reset Extruder
+G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
+G1 X5 Y20 Z0.3 F5000.0 ; Move over to prevent blob squish
+
+
